@@ -40,6 +40,7 @@ Installing `apache-airflow-providers-qubole` from the `conda-forge` channel can 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `apache-airflow-providers-qubole` can be installed with:
