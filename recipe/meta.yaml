@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-qubole" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-qubole-{{ version }}.tar.gz
-  sha256: f4972433bcfbf694a17bbe3a3d4ed714861ec9e03502d1b552b5769367803bbd
+  sha256: 53ba11fc40ecd5eef2a57c53c67b984a17916a762e5d8c42af0b1fa73c51acb6
 
 build:
   noarch: python
