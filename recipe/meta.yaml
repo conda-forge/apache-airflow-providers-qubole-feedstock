@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-qubole" %}
-{% set version = "3.4.2" %}
+{% set version = "3.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-qubole-{{ version }}.tar.gz
-  sha256: d27c61e938cf88d5135a6e9166d4b6aadcdae51054d5d41ca20cbe7c7fcee1af
+  sha256: 9eb31c62266364be9e0168cdab038945ed8d5c1ea290116f22ae71a773c6fcde
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - apache-airflow >=2.5.0
     - apache-airflow-providers-common-sql >=1.3.1
-    - apache-airflow >=2.4.0
     - qds-sdk >=1.10.4
 
 test:
